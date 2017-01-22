@@ -1,0 +1,13 @@
+test 2 :- Blood_Pressure is Pressure_normal / test 2 ;
+
+bundle b1 :-
+    Rule 6 :-
+          test1 : temp is Temp_normal              ( Y N )
+          test2 :                                  ( Y Y )
+          test3 : lung_sounds are clear_LungSounds ( Y Y )
+          end
+          act1 :                                   ( X )
+          act2 :                                   ( - x )
+          otherwise : act4 .
+    / Rule 6 ;
+/ Bundle b1 ;
